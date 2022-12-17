@@ -8,15 +8,17 @@ function Home(){
     setName({...name, [e.target.value: e.name.value]})
   }
 
-  function setLocalStorage(name: string){
-    localStorage.setItem("ticket", JSON.stringify(name));
+  function setLocalStorage(data: string){
+    localStorage.setItem("ticket", JSON.stringify(data));
   }
 
   function submit(e: Event){
     e.preventDefault();
     setLocalStorage(name)
-    alert(localStorage.getItem("ticket"));
+    console.log(localStorage.getItem("ticket"));
   }
+
+  console.log(name)
 
   return(
     <form onSubmit={submit}>
