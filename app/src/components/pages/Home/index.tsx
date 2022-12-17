@@ -8,13 +8,13 @@ function Home(){
     setName({...name, [e.target.value: e.name.value]})
   }
 
-  function setLocalStorage(data: string){
+  /*function setLocalStorage(data: string){
     localStorage.setItem("ticket", JSON.stringify(data));
-  }
+  }*/
 
   function submit(e: Event){
     e.preventDefault();
-    setLocalStorage(name)
+    //setLocalStorage(name)
     console.log(localStorage.getItem("ticket"));
   }
 
