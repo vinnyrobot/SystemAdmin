@@ -9,7 +9,7 @@ function Home(){
   }
 
   return(
-    <form onSubmit={submit}>
+    <form>
       <input type="text" name="name" onChange={(e: Event) => setName({...name, [e.target.value]: e.name.value})} placeholder="Name"/>
       <input type="submit" value="Enviar"/>
     </form>
