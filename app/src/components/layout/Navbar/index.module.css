@@ -29,7 +29,7 @@
 
 .navbar .links .link {
     list-style: none;
-    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .navbar .links .link a {
@@ -53,19 +53,10 @@
 }
 
 @media (max-width: 720px){
-    .navbar .links .link {
-        margin-right: 1em;
-    }
-
-    .navbar .links .link a {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 490px){
     .navbar .links {
         display: none;
     }
+
     .navbar svg {
         display: block;
     }

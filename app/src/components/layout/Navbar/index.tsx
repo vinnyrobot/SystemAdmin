@@ -5,6 +5,12 @@ import styles from "./index.module.css";
 import { FaBars } from "react-icons/fa";
 
 function Navbar(){
+
+    function clearLocalStorage(){
+        localStorage.clear()
+        alert("Seu token de acesso fou excluído");
+    }
+
     return(
         <section className={styles.navbar}>
             <div className={styles.logo}>
@@ -19,6 +25,9 @@ function Navbar(){
                 </li>
                 <li className={styles.link}>
                     <Link to="/clients">Clients</Link>
+                </li>
+                <li className={styles.link} onClick={clearLocalStorage}>
+                    <Link to="/">Log Out</Link>
                 </li>
             </ul>
             <FaBars size={30}/>

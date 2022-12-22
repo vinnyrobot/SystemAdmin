@@ -41,20 +41,28 @@ function Home(){
   }
 
   return(
-    <form className={styles.form} onSubmit={((e) => { e.preventDefault(); submit();})}>
-        <input
-          className={styles.input} 
-          type="text" 
-          name="key"
-          onChange={((e) => setUserKey(e.target.value))} 
-          placeholder="Key"
-        />
-        <input 
-          className={styles.button}
-          type="submit" 
-          value="Entrar"
-        />
-    </form>
+    <>
+      <form className={styles.form} onSubmit={
+        ((e) => { 
+          e.preventDefault(); 
+          submit();
+        })}
+      >
+          <input
+            className={styles.input} 
+            type="text" 
+            name="key"
+            onChange={((e) => setUserKey(e.target.value))} 
+            placeholder="Key"
+            required
+          />
+          <input 
+            className={styles.button}
+            type="submit" 
+            value="Entrar"
+          />
+      </form>
+    </>
   )
 }
 

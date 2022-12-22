@@ -2,39 +2,33 @@ import styles from "./index.module.css"; // imports css file
 
 import { useState } from "react"
 
-import Navbar from "../../layout/Navbar"; // imports a component from layout
-import Footer from "../../layout/Footer";
+import Navbar from "../../layout/Navbar"; // imports the component navbar from layout
+import Footer from "../../layout/Footer"; // imports the component footer from layout
 
 
 function Dashboard(){
     const [users, setUsers] = useState([]); // stored all users that comes from API
     
-    /*
-      if the user does not have the stored token, he will be redirected to the home page
-    */
-
+    //if the user does not have the stored token, he will be redirected to the home page
     if(!localStorage.getItem("login")){
         window.location.href = "/";
         return null;
     }
     
+    //fetch data from API
     fetch("https://jsonplaceholder.typicode.com/users",{
         method: "GET", 
         headers: {
             "Content-Type": "application/json"
         }
     }).then(resp => resp.json()) // get the response that came from API and transforms it into JSON
-    .then(data => setUsers(data)) // get data from JSON
+    .then(data => setUsers(data)) // get data from response
     .catch(error => console.log(error)) // if there are any errors, they will appear in the console
-
-    function clearLocalStorage(){
-        localStorage.clear();
-    }
 
     return(
         <>
             <Navbar/>
-            <table onLoad={clearLocalStorage} className={styles.table}>
+            <table className={styles.table}>
                 <thead className={styles.thead}>
                     <tr>
                         <th>ID</th>
