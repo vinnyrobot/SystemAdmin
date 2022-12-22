@@ -1,3 +1,54 @@
-.tasks h1 {
-    color: #FFF;
+.table {
+    justify-content: center;
+    margin: 5em auto;
+    color: #fff;
+    border: none;
+    border-collapse: collapse;
+    transition: all 1s ease;
+    width: 70em;
+    height: 10em;
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+.table td{
+    padding: 0.5em;
+}
+
+.table .thead th{
+    font-weight: 800;
+    padding: 0.5em;
+    background: rebeccapurple;
+    border: none;
+    text-align: center;
+}
+
+.table .tbody td {
+    font-weight: 600;
+    color: #fff;
+}
+
+.table .tbody .id {
+    background: lightgreen;
+    text-align: center;
+}
+
+.table .tbody .name {
+    background: slateblue;
+}
+
+.table .tbody .email {
+    background: burlywood;
+}
+
+.table .tbody .username {
+    background: silver;
+}
+
+@media (max-width: 720px){
+    .table {
+        width: 10em;
+        height: 20em;
+        font-size: 20px;
+    }
 }
