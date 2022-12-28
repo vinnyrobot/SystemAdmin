@@ -50,7 +50,7 @@ function Home(){
       >
           <input
             className={styles.input} 
-            type="text" 
+            type="password" 
             name="key"
             onChange={((e) => setUserKey(e.target.value))} 
             placeholder="Key"
