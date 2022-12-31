@@ -10,7 +10,7 @@ function Home(){
 
   const [userKey, setUserKey] = useState(""); // state to fetch the key typed by the user
 
-  const systemKey = Key() // key search in database
+  const systemKey = process.env.SECRET_SYSTEM_KEY; // enviroments variable
   const navigate = useNavigate(); // hook used to navigate between pages
 
   const sessionToken = Math.floor(Date.now() * Math.random()).toString(36); // id generator
@@ -22,7 +22,7 @@ function Home(){
     otherwise, the use receives an error message.
     */
 
-    if(userKey.valueOf() === systemKey){
+    if(userKey === systemKey){
       /*
         if the user already contain has the stored token, he will be redirected to the dashboard page.
         otherwise, the algorithm will add a token and the user will be redirected to the dashboard page
