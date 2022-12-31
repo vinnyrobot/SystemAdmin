@@ -1,8 +1,6 @@
 import { useState } from "react"; // import a hook used to store a state
 import { useNavigate } from "react-router-dom"; // import a navigation method
 
-import Key from "../../../services/secretkey/key"; // imports the key in which it is registered to be used
-
 import styles from "./index.module.css"; // import css file
 
 
@@ -22,7 +20,7 @@ function Home(){
     otherwise, the use receives an error message.
     */
 
-    if(userKey === systemKey){
+    if(userKey === "systemkey1"){
       /*
         if the user already contain has the stored token, he will be redirected to the dashboard page.
         otherwise, the algorithm will add a token and the user will be redirected to the dashboard page
