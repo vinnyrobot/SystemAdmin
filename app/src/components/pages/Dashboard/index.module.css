@@ -26,12 +26,10 @@
 .table .tbody td {
     font-weight: 600;
     color: gray;
-    background: #e5e5e5;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .table .tbody .id {
-    background: #ff2401;
     text-align: center;
     color: #fff;
     border: none;

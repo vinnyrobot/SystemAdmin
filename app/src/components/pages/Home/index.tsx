@@ -7,8 +7,6 @@ import styles from "./index.module.css"; // import css file
 function Home(){
 
   const [userKey, setUserKey] = useState(""); // state to fetch the key typed by the user
-
-  const systemKey = process.env.SECRET_SYSTEM_KEY; // enviroments variable
   const navigate = useNavigate(); // hook used to navigate between pages
 
   const sessionToken = Math.floor(Date.now() * Math.random()).toString(36); // id generator
@@ -17,7 +15,7 @@ function Home(){
     /*
     if the user enters the correct key, a token will be stored and
      the user will be redirected to the dashboard page.
-    otherwise, the use receives an error message.
+    otherwise, the user receives an error message.
     */
 
     if(userKey === "systemkey1"){
