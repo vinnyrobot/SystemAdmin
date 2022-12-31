@@ -54,9 +54,9 @@ function Footer(){
                 </span>
             </div>
             <div className={styles.socialMedia}>
-                <a target="_blank" href="https://instagram.com"><FaInstagramSquare size={40}/></a>
+                <a target="_blank" href="https://instagram.com/vinny.ff1/"><FaInstagramSquare size={40}/></a>
                 <a target="_blank" href="https://google.com"><FaGooglePlus size={40}/></a>
-                <a target="_blank" href="https://linkedin.com"><FaLinkedin size={40}/></a>
+                <a target="_blank" href="https://linkedin.com/in/vinnyrobot"><FaLinkedin size={40}/></a>
                 <a target="_blank" href="https://facebook.com" ><FaFacebook size={40}/></a>
                 <a target="_blank" href="https://github.com/vinnyrobot"><FaGithub size={40}/></a>
             </div>
