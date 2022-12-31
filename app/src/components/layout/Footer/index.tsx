@@ -54,7 +54,7 @@ function Footer(){
                 </span>
             </div>
             <div className={styles.socialMedia}>
-                <FaInstagramSquare size={40}/>
+                <a href="https://github.com/vinnyrobot"><FaInstagramSquare size={40}/></a>
                 <FaGooglePlus size={40}/>
                 <FaLinkedin size={40}/>
                 <FaFacebook size={40}/>
