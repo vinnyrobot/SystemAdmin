@@ -65,6 +65,10 @@
     margin-top: 4em;
 }
 
+.footer .socialMedia a {
+    color: transparent;
+}
+
 .footer .socialMedia a svg {
     margin-right: 1.2em;
 }

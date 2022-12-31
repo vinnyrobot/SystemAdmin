@@ -54,11 +54,11 @@ function Footer(){
                 </span>
             </div>
             <div className={styles.socialMedia}>
-                <a href="https://github.com/vinnyrobot"><FaInstagramSquare size={40}/></a>
+                <a href="https://instagram.com"><FaInstagramSquare size={40}/></a>
                 <FaGooglePlus size={40}/>
                 <FaLinkedin size={40}/>
                 <FaFacebook size={40}/>
-                <FaGithub size={40}/>
+                <a target="_blank" href="https://github.com/vinnyrobot"><FaGithub size={40}/></a>
             </div>
             <div className={styles.credits}>
                 <span>&copy; 2022 Copyright Vinny</span>
