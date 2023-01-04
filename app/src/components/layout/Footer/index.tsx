@@ -61,7 +61,7 @@ function Footer(){
                 <a target="_blank" href="https://github.com/vinnyrobot"><FaGithub size={40}/></a>
             </div>
             <div className={styles.credits}>
-                <span>&copy; 2022 Copyright Vinny</span>
+                <span>&copy; 2022 Copyright VinnyRobot</span>
             </div>
         </footer>
     )
