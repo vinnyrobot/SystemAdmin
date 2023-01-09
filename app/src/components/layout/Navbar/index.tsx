@@ -31,9 +31,6 @@ function Navbar(){
                     <li className={styles.link}>
                         <Link to="/dashboard">Dashboard</Link>
                     </li>
-                    <li className={styles.link}>
-                        <Link to="/clients">Clients</Link>
-                    </li>
                     <li className={styles.link} onClick={clearLocalStorage}>
                         <Link to="/">Log Out</Link>
                     </li>
@@ -41,6 +38,19 @@ function Navbar(){
                 <FaBars size={30} onClick={handleShowNavbarResposive}/>
             </header>
             <section className={showNavbarResponsive ? styles.responsiveNavbar : styles.closeResponsiveNavbar}>
+                <nav>
+                    <ul className={styles.links}>
+                        <li className={styles.link}>
+                            <Link to="/">Home</Link/>
+                        </li>
+                        <li className={styles.link}>
+                            <Link to="/dashboard">Dashboard</Link>
+                        </li>
+                        <li className={styles.link}>
+                            <Link to="/">Log Out</Link>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </>
     )

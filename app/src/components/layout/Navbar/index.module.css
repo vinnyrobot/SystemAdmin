@@ -58,6 +58,9 @@
 
 .responsiveNavbar {
     display: flex;
+    background: #121212;
+    height: 4em;
+    padding: 1em 2em;
 }
 
 .closeResponsiveNavbar {
