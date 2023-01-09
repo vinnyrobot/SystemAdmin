@@ -58,6 +58,8 @@
 
 .responsiveNavbar {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: #121212;
     height: 6.5em;
     padding: 1em 2em;
@@ -75,10 +77,11 @@
 .responsiveNavbar .links .link a {
     color: #FFF;
     text-decoration: none;
+    font-size: 24px;
 }
 
 .responsiveNavbar .links .link a:hover {
-    color: #DDD;
+    color: dimgray;
 }
 
 .closeResponsiveNavbar {
