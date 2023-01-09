@@ -52,6 +52,18 @@
     display: none;
 }
 
+.closeNavbar {
+    display: none;
+}
+
+.responsiveNavbar {
+    display: none;
+}
+
+.closeResponsiveNavbar {
+    display: none;
+}
+
 @media (max-width: 720px){
     .navbar .links {
         display: none;
