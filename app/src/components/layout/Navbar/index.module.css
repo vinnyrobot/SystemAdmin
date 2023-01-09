@@ -76,3 +76,9 @@
         display: block;
     }
 }
+
+@media (min-width: 720px) {
+    .responsiveNavbar {
+        display: none;
+    }
+}

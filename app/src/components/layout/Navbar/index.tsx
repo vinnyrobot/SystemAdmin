@@ -15,7 +15,7 @@ function Navbar(){
     }
 
     function handleShowNavbarResposive(){
-        setShowNavbarResponsive(true);
+        setShowNavbarResponsive(showNavbarResponsive ? false : true);
     }
 
     return(
