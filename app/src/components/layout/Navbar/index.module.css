@@ -63,6 +63,20 @@
     padding: 1em 2em;
 }
 
+.responsiveNavbar .links .link {
+    list-style: none;
+    margin-left: 3em;
+}
+
+.responsiveNavbar .links .link a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.responsiveNavbar .links .link a:hover {
+    opacity: 0.4;
+}
+
 .closeResponsiveNavbar {
     display: none;
 }
