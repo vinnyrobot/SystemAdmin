@@ -40,7 +40,7 @@ function Navbar(){
                 </ul>
                 <FaBars size={30} onClick={handleShowNavbarResposive}/>
             </header>
-            <section className={showNavbarResponsive ? styles.responsiveNavbar : closeResponsiveNavbar}>
+            <section className={showNavbarResponsive ? styles.responsiveNavbar : styles.closeResponsiveNavbar}>
             </section>
         </>
     )
