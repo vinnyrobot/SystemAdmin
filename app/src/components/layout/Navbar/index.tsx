@@ -38,7 +38,7 @@ function Navbar(){
                         <Link to="/">Log Out</Link>
                     </li>
                 </ul>
-                <FaBars size={30} onClick={handleShowNavbarResponsive}/>
+                <FaBars size={30} onClick={handleShowNavbarResposive}/>
             </header>
             <section className={showNavbarResponsive ? styles.responsiveNavbar : closeResponsiveNavbar}>
             </section>
