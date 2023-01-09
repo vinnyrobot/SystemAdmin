@@ -59,8 +59,12 @@
 .responsiveNavbar {
     display: flex;
     background: #121212;
-    height: 4em;
+    height: 6.5em;
     padding: 1em 2em;
+}
+
+.responsiveNavbar .links {
+    display: flex;
 }
 
 .responsiveNavbar .links .link {
