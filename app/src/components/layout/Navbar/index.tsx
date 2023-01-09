@@ -47,7 +47,7 @@ function Navbar(){
                             <Link to="/dashboard">Dashboard</Link>
                         </li>
                         <li className={styles.link}>
-                            <Link to="/">Log Out</Link>
+                            <Link to="/"> onClick={clearLocalStorage}>Log Out</Link>
                         </li>
                     </ul>
                 </nav>
