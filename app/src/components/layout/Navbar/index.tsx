@@ -20,7 +20,7 @@ function Navbar(){
 
     return(
         <>
-            <header className={showNavbarResponsive ? styles.navbar : styles.closeNavbar}>
+            <header className={styles.navbar}>
                 <div className={styles.logo}>
                     <h2 className={styles.textLogo}>Jvn</h2>
                 </div>
