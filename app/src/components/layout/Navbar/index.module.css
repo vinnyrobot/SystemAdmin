@@ -75,13 +75,16 @@
 }
 
 .responsiveNavbar .links .link a {
-    color: #FFF;
+    color: #707070;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 21.5px;
+    transition: all 0.8s ease;
+    padding: 0.5em 1em;
 }
 
 .responsiveNavbar .links .link a:hover {
-    color: dimgray;
+    color: #FFF;
+    background: #65FE;
 }
 
 .closeResponsiveNavbar {
